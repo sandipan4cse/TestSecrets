@@ -6,7 +6,7 @@ title = "sample gitleaks config"
 # configurations from that path. Gitleaks does not whitelist anything by default.
 [[rules]]
 description = "AWS Key"
-regex = '''ABCDEF'''
+regex = '''AKIA[0-9A-Z]{16}'''
 tags = ["key", "AWS"]
 
 [[rules]]
@@ -21,12 +21,12 @@ tags = ["key", "RSA"]
 
 [[rules]]
 description = "SSH"
-regex = '''-----BEGIN OPENSSH PRIVATE KEY-----'''
+regex = '''ABCDEF'''
 tags = ["key", "SSH"]
 
 [[rules]]
 description = "PGP"
-regex = '''-----BEGIN PGP PRIVATE KEY BLOCK-----'''
+regex = '''PASSWDD'''
 tags = ["key", "PGP"]
 
 [[rules]]
