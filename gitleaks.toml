@@ -5,6 +5,16 @@ title = "sample gitleaks config"
 # is set, gitleaks will load configurations from that path. If option --config-path is set, gitleaks will load
 # configurations from that path. Gitleaks does not whitelist anything by default.
 [[rules]]
+	description = "AWS Secret Key"
+	regex = '''(?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]'''
+	tags = ["key", "AWS"]
+
+[[rules]]
+    description = "AWS Access Key"
+    regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
+    tags = ["key", "AWS"]
+
+[[rules]]
 description = "AWS Key"
 regex = '''AKIA[0-9A-Z]{16}'''
 tags = ["key", "AWS"]
