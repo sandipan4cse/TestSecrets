@@ -5,12 +5,7 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/sandipan4cse/TestSecrets/gitleaks/v7/config"
-	"github.com/sandipan4cse/TestSecrets/gitleaks/v7/options"
-	"github.com/sandipan4cse/TestSecrets/gitleaks/v7/scan"
-
-	"github.com/hako/durafmt"
-	log "github.com/sirupsen/logrus"
+	"github.com/sandipan4cse/TestSecrets/"
 )
 
 func main() {
