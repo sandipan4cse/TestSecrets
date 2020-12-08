@@ -6,7 +6,7 @@ title = "sample gitleaks config"
 # configurations from that path. Gitleaks does not whitelist anything by default.
 [[rules]]
 	description = "AWS Secret Key"
-	regex = '''(?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]'''
+	regex = '''AKIAIO5FODNN7EXAMPLE'''
 	tags = ["key", "AWS"]
 
 [[rules]]
